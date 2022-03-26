@@ -13,7 +13,7 @@ function App() {
 
 const user=useSelector(selectUser)
 const dispatch=useDispatch()
-console.log(user.dispalyName)
+// console.log(user.dispalyName)
 
 useEffect (()=>{
   auth.onAuthStateChanged(userAuth=>{

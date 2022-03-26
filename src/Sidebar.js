@@ -6,6 +6,8 @@ import './Sidebar.css'
 function Sidebar() {
  
    const user=useSelector(selectUser)
+console.log(user.dispalyName)
+
 
 const recentItem =(topic)=>{
   return (
@@ -24,7 +26,7 @@ const recentItem =(topic)=>{
 <img src='https://media.istockphoto.com/vectors/abstract-blurred-colorful-background-vector-id1185382671?k=20&m=1185382671&s=612x612&w=0&h=QvHSiV0uDYhl69m1rpIt0aYbk4vmpl9kjVcfkMkgyfw='/>
         
         <Avatar src={user.photoUrl} className='sidebar_avatar'>{user.email[0].toUpperCase()}</Avatar>
-        <h2>{user.displayName}</h2>
+        <h2>{user.dispalyName}</h2>
         <h4>{user.email}</h4>
         </div>
 
